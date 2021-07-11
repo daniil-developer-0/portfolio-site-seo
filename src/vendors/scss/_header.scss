@@ -1,0 +1,84 @@
+// Header Styles
+
+.header {
+  margin-top: 27px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  // Header container
+  &__body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    color: $clr-header-text;
+    @include container(100%, 49px);
+
+    // Navigation and Login menu flex
+    .navigation__list,
+    .login-menu__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    // Navigation
+    .navigation {
+      padding: 2px 0;
+      border-right: 1px solid $clr-header-text;
+      &__list {
+        margin: 0;
+      }
+      // Navigation List Items
+      &__item {
+        margin-left: 25px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 25px;
+        }
+      }
+      // Navigation Links
+      &__link {
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+      }
+    }
+
+    // Login menu after navigation
+    .login-menu {
+      &__list {
+      }
+      &__item {
+        margin-left: 25px;
+      }
+      &__login {
+      }
+      &__sign-up {
+        width: max-content;
+        border-radius: 50px;
+        padding: 7px 22px;
+        padding-bottom: 5px;
+        border: 1px $clr-header-text solid;
+        span {
+          line-height: 0;
+        }
+      }
+      &__link {
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+      }
+    }
+  }
+}

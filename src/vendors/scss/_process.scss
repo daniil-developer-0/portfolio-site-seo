@@ -1,0 +1,30 @@
+.process {
+    padding: 4rem 0;
+    background-color: rgba(243, 243, 243, 1);
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__content {
+      max-width: 402px;
+  }
+  &__content-image {
+  }
+  &__title {
+  }
+  &__text {
+      margin-top: 30px;
+  }
+  &__link {
+    margin-top: 30px;
+    &:hover {
+    }
+    &:active {
+    }
+    &:focus {
+    }
+  }
+  &__img {
+  }
+}

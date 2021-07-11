@@ -1,0 +1,162 @@
+@import "_utils/colors";
+@import "_utils/mixins";
+@import "_utils/default";
+
+// Phones
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}
+
+// Phone (landscape)
+@media only screen and (min-width: 481) and (max-width: 767px) {
+}
+
+// iPad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+// iPad (landscape)
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+
+// PC
+@media only screen and (min-width: 1224px) {
+}
+
+// Big screens
+@media only screen and (min-width: 1824px) {
+}
+
+// Additional
+@media screen and (max-width: 1075px) {
+  .text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+  }
+  .content-image {
+    display: block;
+    margin: 0 auto;
+  }
+  // Hero
+  .hero {
+    background: white;
+    &__text-block {
+      margin: 0 auto;
+      padding: 120px 0;
+      text-align: center;
+    }
+    &__btn {
+      margin: auto;
+    }
+  }
+  // Service
+  .service {
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      max-width: 100%;
+      margin-top: 5rem;
+    }
+  }
+  // Process and Portfolio
+  .process,
+  .portfolio {
+    &__img {
+      width: 100%;
+    }
+    &__body {
+      flex-direction: column;
+    }
+    &__content {
+      max-width: 100%;
+    }
+    &__link {
+      text-align: center;
+    }
+    &__img {
+      display: block;
+      margin: 3rem auto 0;
+    }
+  }
+  .portfolio__body {
+    flex-direction: column-reverse;
+  }
+  // Clients
+  .clients {
+    .client {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+      img {
+        position: initial;
+      }
+    }
+    .companies {
+      &__list {
+        flex-direction: column;
+      }
+      &__item {
+        margin-top: 2rem;
+      }
+    }
+  }
+  // Pay
+  .pay {
+    &__body {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      background: initial;
+    }
+    &__title_white,
+    &__info_white {
+      color: $clr-title;
+    }
+    &__booking {
+      .pay__info {
+        margin: 69.5px 0;
+      }
+      padding: 0;
+    }
+    &__payment,
+    &__booking {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-around;
+      // height: 100%;
+    }
+  }
+  // Footer
+  footer.footer {
+    display: none;
+  }
+  .footer__thanks {
+    margin-top: 3.3rem;
+    &-text {
+        justify-content: center;
+        width: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 803px) {
+  // Pay
+  .pay {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: initial;
+    }
+    &__booking {
+      .pay__info {
+        margin-top: 18px;
+      }
+    }
+  }
+}

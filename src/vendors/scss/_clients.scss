@@ -1,0 +1,74 @@
+.clients {
+  background-color: #f3f3f3;
+  &__body {
+    padding: 86px 0 70px;
+    .client {
+      position: relative;
+      box-sizing: content-box;
+      height: 700px;
+      img {
+        position: absolute;
+      }
+
+      &__1 {
+        top: 113px;
+        left: 227px;
+      }
+      &__2 {
+        top: 70px;
+        left: 586px;
+      }
+      &__3 {
+        top: 45px;
+        right: 377px;
+      }
+      &__4 {
+        top: 326px;
+        left: 304px;
+      }
+      &__5 {
+        top: 270px;
+        left: 501px;
+      }
+      &__6 {
+        top: 245px;
+        right: 549px;
+      }
+      &__7 {
+        top: 236px;
+        right: 256px;
+      }
+      &__8 {
+        top: 473px;
+        right: 664px;
+      }
+      &__9 {
+        top: 430px;
+        right: 360px;
+      }
+    }
+    .companies {
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__item {
+        width: 200px;
+        height: 117px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 10px 20px rgba(153, 151, 151, 0.5);
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+    font-weight: 600;
+  }
+}

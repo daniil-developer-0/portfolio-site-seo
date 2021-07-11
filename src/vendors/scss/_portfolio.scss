@@ -1,0 +1,30 @@
+.portfolio {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 64px 16px 48px;
+  }
+  &__content {
+    max-width: 402px;
+  }
+  &__content-image {
+  }
+  &__title.title {
+    margin-top: 15px;
+  }
+  &__text.text {
+    margin-top: 2rem;
+  }
+  &__link {
+    margin-top: 50px;
+    &:hover {
+    }
+    &:active {
+    }
+    &:focus {
+    }
+  }
+  &__img {
+  }
+}

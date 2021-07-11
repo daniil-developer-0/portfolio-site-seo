@@ -1,0 +1,53 @@
+.pay {
+  padding-top: 85px;
+  &__body {
+    // Waves
+    background-image: url('../assets/images/svg/wave-2.svg'), url('../assets/images/svg/wave-1.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  &__payment,
+  &__booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__payment {
+      padding-bottom: 56px;
+  }
+  &__booking {
+      padding: 391px 0 92px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__info {
+    display: block;
+    color: #333;
+    font-family: "Raleway", sans-serif;
+    margin-top: 38px;
+    text-align: center;
+    font-weight: 600;
+  }
+  &__title_white,
+  &__info_white {
+    color: white;
+  }
+  &__info_mt-85 {
+      margin-top: 85px;
+  }
+  &__btn {
+    display: block;
+    padding: 20px 110px;
+    max-width: max-content;
+    margin-top: 52px;
+    &:hover {
+    }
+    &:active {
+    }
+    &:focus {
+    }
+  }
+}

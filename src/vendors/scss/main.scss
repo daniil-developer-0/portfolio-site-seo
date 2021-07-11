@@ -1,0 +1,63 @@
+@import "_utils/colors";
+@import "_utils/mixins";
+@import "_utils/default";
+
+.container {
+  @include container(1150px, 16px);
+}
+
+// Content
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  line-height: 48.09px;
+  margin: 2rem 0 1rem;
+  color: $clr-title;
+}
+
+.text {
+  font-family: $ff;
+  font-size: 15px;
+  font-weight: 400;
+  color: $clr-gray-text;
+  margin: 0;
+}
+
+.link {
+  color: $clr-green;
+  font-size: 15px;
+  text-transform: capitalize;
+    display: block;
+
+}
+
+.btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  max-width: 350px;
+  background-color: $clr-blue;
+  box-shadow: 0px 50px 50px $clr-blue-shadow;
+  border-radius: 50px;
+  color: $clr-white;
+}
+
+.content-image {
+
+}
+
+
+
+// Header
+@import 'header';
+
+// Sections
+@import 'hero';
+@import 'service';
+@import 'process';
+@import 'portfolio';
+@import 'clients';
+@import 'pay';
+
+// Footer
+@import 'footer';

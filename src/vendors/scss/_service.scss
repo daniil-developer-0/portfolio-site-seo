@@ -1,0 +1,33 @@
+.service {
+  counter-reset: services;
+  @include container(950px, 1rem);
+  padding-bottom: 70px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    counter-increment: services;
+    max-width: 200px;
+  }
+  &__image {
+      display: block;
+      margin: 0 auto;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $clr-title;
+    margin: 40px 0 15px;
+    text-align: center;
+    // display: inline-block;
+    &::before {
+      content: counter(services) ". ";
+    }
+  }
+  &__description {
+    line-height: 26.2px;
+    text-align: center;
+  }
+}
